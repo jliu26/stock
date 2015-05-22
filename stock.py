@@ -306,6 +306,16 @@ def tradeSim(symbol, date, ma1, ma2, maType, fund):
 
 
 if __name__ == '__main__':
+    """
+    Input stock symbols into symbols array it will run multiple stock analysis
+    Change the date parameter in each function to determine simulation start date
+    Model:
+        Given a set amount of fund, program will try to buy 100 shares at every entry point
+        Sells everything in every exist point
+        If there's not enough fund to buy 100 shares, it will buy as much as it can
+        Print out profits/losses on every transaction
+        Tally up total/gain loss in the end
+    """
     symbols = ["FB"]
     cash = 0
     fund = 0
